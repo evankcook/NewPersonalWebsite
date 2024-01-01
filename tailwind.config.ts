@@ -12,6 +12,13 @@ const config: Config = {
         Montserrat: ["Montserrat", "sans-serif"],
         Mako: ["Mako", "sans-serif"],
       },
+      animation: {
+        fadeIn: "fadeIn 0.5s ease-out 0.5s",
+        fadeInUp: "fadeInUp 0.5s ease-out forwards",
+        fadeInDelayed: "fadeIn 0.5s ease-out 1s",
+        fadeDown: "fadeDown 0.5s ease-out",
+        fadeDownDelayed: "fadeDown 1s ease-out 2s",
+      },
     },
     colors: {
       "primary-back": "#182C25",
@@ -22,6 +29,10 @@ const config: Config = {
       "neutral-offset": "#534646",
       "light-offset": "#A9A29D",
       "accent-overlay": "#306844",
+    },
+    boxShadow: {
+      bottom:
+        "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
     },
   },
   plugins: [],

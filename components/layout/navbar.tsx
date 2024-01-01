@@ -40,7 +40,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-secondary-back text-primary-light w-full h-20 xl:pl-36 lg:pl-20 pl-12 xl:pr-10 pr-6 z-40">
+    <nav className="fixed bg-secondary-back shadow-bottom text-primary-light w-full h-20 xl:pl-36 lg:pl-20 pl-12 xl:pr-10 pr-6 z-40">
       <div className="h-full w-full flex justify-between items-center ">
         <div className="md:hidden">
           <Menu>
