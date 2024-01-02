@@ -83,6 +83,57 @@
   animation: fadeDown 0.5s forwards 0.3s;
 }
 
+@keyframes fadeDownFrom {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+}
+
+.fadeDownFrom {
+  opacity: 1;
+  animation: fadeDownFrom 1s forwards;
+}
+
+@keyframes fadeDownFromAndOut {
+  from {
+    opacity: 0.3;
+    width: 95%;
+    z-index: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 100;
+    width: 112%;
+    z-index: 10;
+    transform: translateY(110px);
+  }
+}
+
+.fadeDownFromAndOut {
+  opacity: 0.3;
+  width: 95%;
+  z-index: 0;
+  animation: fadeDownFromAndOut 0.5s forwards 0.2;
+}
+
+@keyframes fadeDownTab {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(55px);
+  }
+}
+
+.fadeDownTab {
+  animation: fadeDownTab 0.5s forwards 0.2;
+}
+
 @keyframes expandWidth {
   from {
     transform-origin: left;

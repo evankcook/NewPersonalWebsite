@@ -1,6 +1,6 @@
 interface SectionTitleProps {
   title: string;
-  className: string;
+  className?: string;
 }
 
 export default function SectionTitle({ title, className }: SectionTitleProps) {
