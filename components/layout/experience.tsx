@@ -95,13 +95,21 @@ export default function Experience() {
   return (
     <Section id="experience">
       {(isVisible) => (
-        <div className="w-full flex flex-col items-center py-40">
-          <div className="w-full flex justify-center">
+        <div className="w-full flex flex-col items-center pt-32 pb-60">
+          <div
+            className={`w-full flex justify-center ${
+              isVisible ? "fadeDown animate-fadeDown" : ""
+            }`}
+          >
             <div className="md:w-2/3 sm:w-4/5 w-[90%]">
               <SectionTitle title="experience" />
             </div>
           </div>
-          <div className="w-2/3">
+          <div
+            className={`w-2/3 ${
+              isVisible ? "fadeInTabs animate-fadeInTabs" : ""
+            }`}
+          >
             <div className="flex justify-end mt-8">
               {experienceList.map((exp, idx) => (
                 <button
@@ -114,7 +122,11 @@ export default function Experience() {
               ))}
             </div>
           </div>
-          <div className="relative flex items-end justify-center w-4/5 lg:h-[31rem] h-[34rem] mt-14">
+          <div
+            className={`relative flex items-end justify-center w-4/5 lg:h-[31rem] h-[34rem] mt-14 ${
+              isVisible ? "fadeInUpFiles animate-fadeInUpFiles" : ""
+            }`}
+          >
             <div
               className={`absolute w-full lg:h-[29rem] h-[32rem] bg-primary-light z-10 ${
                 isAnimating ? "fadeDownFrom animate-fadeDownFrom" : ""
