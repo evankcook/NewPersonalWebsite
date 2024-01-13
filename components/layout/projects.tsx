@@ -74,7 +74,7 @@ export default function Projects() {
             </div>
           </div>
           <div
-            className={`w-4/5 flex flex-wrap justify-between items-center mt-16 ${
+            className={`sm:w-4/5 w-[90%] flex flex-wrap justify-between items-center md:mt-16 mt-6 ${
               isVisible ? "simpleFadeIn animate-simpleFadeIn" : ""
             }`}
           >

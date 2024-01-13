@@ -20,13 +20,13 @@ export default function ProjectThumbnail({
 
   return (
     <>
-      <div className="w-[47%] h-[24rem] mb-12 flex justify-center items-center rounded-md bg-secondary-back p-3">
+      <div className="sm:w-[47%] w-full lg:h-[28rem] md:h-72 sm:h-64 h-36 md:mb-12 sm:mb-8 mb-4 flex justify-center items-center rounded-md bg-secondary-back p-3">
         <div
           className={`relative bg-center bg-cover h-full w-full rounded-md`}
           style={backgroundImageDiv}
         >
-          <div className="absolute bottom-2 right-2 bg-primary-light w-56 h-10 flex justify-end items-center">
-            <span className="font-Montserrat font-[20px] text-neutral-offset pr-4">
+          <div className="absolute bottom-2 right-2 bg-primary-light md:w-56 w-40 h-10 flex justify-end items-center">
+            <span className="font-Montserrat md:text-[16px] text-[12px] text-neutral-offset pr-4">
               {title}
             </span>
           </div>
