@@ -17,11 +17,12 @@ export default function AboutMe() {
                   }`}
                 ></div>
                 <SectionTitle
-                  title="about me"
                   className={`${
                     isVisible ? "fadeDownTitle animate-fadeDown" : ""
                   }`}
-                />
+                >
+                  about me
+                </SectionTitle>
                 <div
                   className={`flex justify-center items-center bg-accent-back h-[330px] ${
                     isVisible ? "fadeInUpText animate-fadeInUp" : ""

@@ -29,6 +29,7 @@ const config: Config = {
       "neutral-offset": "#534646",
       "light-offset": "#A9A29D",
       "accent-overlay": "#306844",
+      "github-green": "#85BC63",
     },
     boxShadow: {
       bottom:

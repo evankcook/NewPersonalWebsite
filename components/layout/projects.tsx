@@ -1,0 +1,89 @@
+"use client";
+
+import ProjectThumbnail from "../UI/project-thumbnail";
+import Section from "../UI/section";
+import SectionTitle from "../UI/section-title";
+
+export type ProjectItem = {
+  title: string;
+  description: string;
+  link: string;
+  imagePath: string;
+  toolbox: string[];
+};
+
+const projectList: ProjectItem[] = [
+  {
+    title: "LectureLink",
+    description:
+      "LectureLink is a presentation clicker with an integrated polling system, designed to help professors measure their students' engagement and participation during lectures. With just a click, professors can send a prompt that asks for level of understanding to students' devices, allowing them to give real-time feedback. This interactive approach to teaching and learning not only enhances comprehension but also encourages participation and collaboration in the classroom.",
+    link: "https://github.com/LectureLink/LectureLink",
+    imagePath: "/lecturelink.png",
+    toolbox: [
+      "Node.js",
+      "Prisma",
+      "TypeScript",
+      "ReactNative",
+      "Docker",
+      "Expo",
+    ],
+  },
+  {
+    title: "MealPal",
+    description:
+      "In this project, I built a web application to facilitate the recipe search process. The app utilizes the Spoonacular API for recipe querying. The front end was built using React, Javascript, HTML, and CSS. User verification and food preference storage was built using Firebase.",
+    link: "https://github.com/evankcook/FoodPlannerProject",
+    imagePath: "/mealpal.png",
+    toolbox: ["Node.js", "Express.js", "JavaScript", "React", "PostgreSQL"],
+  },
+  {
+    title: "Photo Editor Project",
+    description:
+      "During the duration of this project, another student and I created a photo editor application that provided support for 17 features. It could process commands through a GUI, 'text-mode', and scripting. This project was completed using Java and the Swing toolkit. The project was made following the principles of object-oriented design and MVC architecture.",
+    link: "https://youtu.be/ARFNPOQmuC8",
+    imagePath: "/photo-editor-project.png",
+    toolbox: [
+      "Java",
+      "Object-Oriented Design",
+      "Java Swing",
+      "MVC Architecture",
+    ],
+  },
+  {
+    title: "Personal Website",
+    description:
+      "Surprise! You're interacting with this project as you read this. I hope you are enjoying it! This website was created using TypeScript through the Next.js React Framework. The user interface is styled using tailwind and Headless UI. It is still a work in progress as I hope to add more projects in the future!",
+    link: "https://github.com/evankcook/evankoseicook.com",
+    imagePath: "/personal-website.png",
+    toolbox: ["Next.js", "TypeScript", "React", "Tailwind", "Headless UI"],
+  },
+];
+
+export default function Projects() {
+  return (
+    <Section id="projects">
+      {(isVisible) => (
+        <div className="w-full flex flex-col items-center pt-32 pb-60">
+          <div
+            className={`w-full flex justify-center ${
+              isVisible ? "fadeDown animate-fadeDown" : ""
+            }`}
+          >
+            <div className="md:w-2/3 sm:w-4/5 w-[90%]">
+              <SectionTitle>projects</SectionTitle>
+            </div>
+          </div>
+          <div
+            className={`w-4/5 flex flex-wrap justify-between items-center mt-16 ${
+              isVisible ? "simpleFadeIn animate-simpleFadeIn" : ""
+            }`}
+          >
+            {projectList.map((project, idx) => (
+              <ProjectThumbnail key={idx} {...project} />
+            ))}
+          </div>
+        </div>
+      )}
+    </Section>
+  );
+}

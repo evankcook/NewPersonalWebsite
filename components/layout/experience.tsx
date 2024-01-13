@@ -38,11 +38,10 @@ const experienceList: ExperienceItem[] = [
     start: "September 2021",
     end: "April 2023",
     bullets: [
-      "Developed a scalable metrics dashboard from scratch, integrating MySQL and DynamoDB with AWS Lambda, and learning to use localstack for development, leveraging acquired capabilities in full-stack development and cloud services.",
-      "Successfully resolved 29 GitHub issues in a React application, enhancing UI functionality and aesthetics, leveraging my TypeScript skills and learning Material UI.",
-      "Executed backend updates and migrations in MySQL using Alembic and independently integrated new Lambda functions.",
-      "Authored comprehensive documentation for a 31-endpoint API using Swagger on a static S3-hosted site.",
-      "Implemented a complete redesign of the marketing page using Webflow, managing Make and AWS Lambda integrations for streamlined website updates, demonstrating proficiency in HTML and CSS styling.",
+      "Developed an MVP of a gift swap app from scratch for a startup using React, TypeScript, Firebase, and Tailwind",
+      "Designed a group-specific code approach to the member invite process through discussions with developers",
+      "Determined development goals on a weekly basis with the three other pod leads, project manager, and CEO",
+      "Constructed and instructed a four-session web development fundamentals course for new developers",
     ],
   },
 ];
@@ -102,7 +101,7 @@ export default function Experience() {
             }`}
           >
             <div className="md:w-2/3 sm:w-4/5 w-[90%]">
-              <SectionTitle title="experience" />
+              <SectionTitle>experience</SectionTitle>
             </div>
           </div>
           <div
@@ -114,6 +113,7 @@ export default function Experience() {
               {experienceList.map((exp, idx) => (
                 <button
                   id={"experience-button-" + idx}
+                  key={idx}
                   className="experience-button md:w-32 w-20 font-Mako md:text-[20px] text-[12px] text-primary-light py-2"
                   onClick={() => handleTabChange(idx)}
                 >

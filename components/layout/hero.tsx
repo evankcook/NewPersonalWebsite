@@ -17,9 +17,8 @@ export default function Hero() {
             Computer science and business student at Northeastern University
           </h2>
           <p className="font-Mako text-primary-light lg:text-[20px] text-[16px] w-4/5 mb-8 sm:block hidden">
-            Text here for brief description of who I am. Text here for brief
-            description of who I am. Text here for brief description of who I
-            am. Text here for brief description of who I am.
+            An aspiring software engineer seeking harmony in complexity,
+            crafting elegent solutions with a keystroke's grace.
           </p>
           <NavButton to={"/resume.pdf"} newPage={true}>
             Check out my resume
