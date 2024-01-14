@@ -4,7 +4,7 @@ import DownArrowIcon from "../icons/down-arrow";
 // The hero section containing intro information and resume.
 export default function Hero() {
   return (
-    <div className="h-full w-full flex flex-col justify-between items-center sm:pt-60 pt-40 ">
+    <div className="h-dvh w-full flex flex-col justify-between items-center sm:pt-60 pt-40 ">
       <div className="w-2/3 pb-40 sm:text-left text-center">
         <h3 className="font-Mako text-primary-light lg:text-3xl text-2xl sm:mb-1 mb-4 fadeDown animate-fadeDown">
           Hello, my name is

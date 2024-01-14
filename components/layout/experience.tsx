@@ -114,7 +114,7 @@ export default function Experience() {
                 <button
                   id={"experience-button-" + idx}
                   key={idx}
-                  className="experience-button md:w-32 w-20 font-Mako md:text-[20px] text-[12px] text-primary-light py-2"
+                  className="experience-button md:w-32 w-20 font-Mako md:text-[20px] text-[12px] text-primary-light py-2 drop-shadow"
                   onClick={() => handleTabChange(idx)}
                 >
                   {exp.employer}
@@ -123,7 +123,7 @@ export default function Experience() {
             </div>
           </div>
           <div
-            className={`relative flex items-end justify-center w-4/5 lg:h-[31rem] h-[34rem] mt-14 ${
+            className={`relative drop-shadow-md flex items-end justify-center w-4/5 lg:h-[31rem] h-[34rem] mt-14 ${
               isVisible ? "fadeInUpFiles animate-fadeInUpFiles" : ""
             }`}
           >

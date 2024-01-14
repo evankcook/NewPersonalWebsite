@@ -42,11 +42,11 @@ export default function ProjectModal({
         onClick={onClose}
       >
         <div
-          className="relative lg:w-[60rem] md:w-[45rem] w-[90%] lg:h-[40rem] sm:h-[36rem] h-[28rem] bg-secondary-back rounded-md"
+          className="relative lg:w-[60rem] md:w-[45rem] w-[90%] lg:h-[40rem] sm:h-[36rem] h-[28rem] bg-secondary-back rounded-md drop-shadow-md"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="mt-6 flex justify-end px-6 expandLeft animate-expandLeft">
-            <span className="font-Montserrat lg:text-6xl md:text-3xl text-lg text-primary-light px-8 py-1 rounded-md bg-neutral-offset">
+          <div className="drop-shadow-md mt-6 flex justify-end px-6 expandLeft animate-expandLeft">
+            <span className="font-Montserrat lg:text-6xl md:text-3xl text-lg text-primary-light px-8 py-1 rounded-md bg-neutral-offset rounded-r-none border-r-4 border-r-light-offset">
               {project.title}
             </span>
           </div>
@@ -62,7 +62,7 @@ export default function ProjectModal({
                 </div>
               </OverlayLink>
             </div>
-            <div className="md:absolute md:right-0 lg:min-h-[16rem] md:min-h-[12rem] min-h-24 lg:w-[28rem] md:w-[24rem] w-full bg-accent-back rounded-md z-30 flex justify-center items-center md:mt-0 mt-4 simpleFadeInModalText animate-simpleFadeIn">
+            <div className="drop-shadow-lg md:absolute md:right-0 lg:min-h-[16rem] md:min-h-[12rem] min-h-24 lg:w-[28rem] md:w-[24rem] w-full bg-accent-back rounded-md z-30 flex justify-center items-center md:mt-0 mt-4 simpleFadeInModalText animate-simpleFadeIn">
               <p className="lg:px-8 px-6 lg:py-4 py-2 text-primary-light lg:text-[18px] sm:text-[14px] text-[8px] font-Mako">
                 {project.description}
               </p>
@@ -70,9 +70,9 @@ export default function ProjectModal({
           </div>
           <div className="simpleFadeInToolBox animate-simpleFadeIn">
             <div className="absolute bottom-0 w-full h-16 px-6  expandUpwardsToolbox animate-expandUpwards">
-              <div className="w-full h-full bg-neutral-offset rounded-tl-md rounded-tr-md">
+              <div className="w-full h-full bg-neutral-offset rounded-tl-md rounded-tr-md border-t-2 border-l-2 border-r-2 border-light-offset shadow-upward">
                 <div
-                  className={`absolute sm:-top-5 -top-3 left-10 flex justify-start sm:w-32 w-28 bg-primary-light rounded-md text-[#CBC7C0] font-Mako text-stroke sm:text-[18px] text-[12px] sm:py-1.5 py-0.5`}
+                  className={`absolute sm:-top-5 -top-3 left-10 flex justify-start sm:w-32 w-28 bg-primary-light rounded-md text-[#CBC7C0] font-Mako text-stroke sm:text-[18px] text-[12px] sm:py-1.5 py-0.5 shadow-upward`}
                 >
                   <ToolIcon className="sm:h-6 h-4 mt-[2px] ml-1" />
                   <span className="ml-1">toolbox</span>

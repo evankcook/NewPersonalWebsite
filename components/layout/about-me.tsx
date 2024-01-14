@@ -12,7 +12,7 @@ export default function AboutMe() {
             <div className="flex w-full h-full">
               <div className="flex flex-col justify-between h-full md:w-2/3 w-1/2">
                 <div
-                  className={`h-6 w-full bg-secondary-back ${
+                  className={`drop-shadow-sm h-6 w-full bg-secondary-back ${
                     isVisible ? "expandWidthFirst animate-expandWidth" : ""
                   }`}
                 ></div>
@@ -24,7 +24,7 @@ export default function AboutMe() {
                   about me
                 </SectionTitle>
                 <div
-                  className={`flex justify-center items-center bg-accent-back h-[330px] ${
+                  className={`drop-shadow-lg  flex justify-center items-center bg-accent-back h-[330px] ${
                     isVisible ? "fadeInUpText animate-fadeInUp" : ""
                   }`}
                 >
@@ -45,19 +45,19 @@ export default function AboutMe() {
               </div>
               <div className="flex flex-col justify-between md:w-1/3 w-1/2 h-full ml-6">
                 <div
-                  className={`bg-[url('/me-photo.jpg')] bg-center bg-cover w-full h-[90%] rounded-md ${
+                  className={`drop-shadow-md bg-[url('/me-photo.jpg')] bg-center bg-cover w-full h-[90%] rounded-md ${
                     isVisible ? "fadeInUpPhoto animate-fadeInUp" : ""
                   }`}
                 ></div>
                 <div
-                  className={`bg-secondary-back w-full h-[5%] ${
+                  className={`drop-shadow-sm bg-secondary-back w-full h-[5%] ${
                     isVisible ? "expandHeight animate-expandHeight" : ""
                   }`}
                 ></div>
               </div>
             </div>
             <div
-              className={`h-2 w-full bg-neutral-offset mt-4 ${
+              className={`drop-shadow-sm h-2 w-full bg-neutral-offset mt-4 ${
                 isVisible ? "expandWidthSecond animate-expandWidth" : ""
               }`}
             ></div>
