@@ -1,4 +1,4 @@
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { InterestItem } from "../layout/interests";
 import NavButton from "./navbutton";
 
@@ -24,18 +24,27 @@ export default function InterestBox({
                 {title}
               </h1>
             </Disclosure.Button>
-            <Disclosure.Panel className="w-full bg-primary-light text-gray-500">
-              <p className="font-Mako md:text-[18px] sm:text-[12px] text-[10px] text-neutral-offset px-8 sm:pb-4 pb-1">
-                {description}
-              </p>
-              <div className="w-full flex justify-center sm:py-4 py-1">
-                <NavButton to={link} newPage={true}>
-                  <span className="sm:px-12 md:text-[20px] sm:text-[14px] text-[10px]">
-                    Check it out
-                  </span>
-                </NavButton>
-              </div>
-            </Disclosure.Panel>
+            <Transition
+              enter="transition duration-200 ease-out"
+              enterFrom="transform origin-top scale-y-0 opacity-0"
+              enterTo="transform origin-top scale-y-100 opacity-100"
+              leave="transition duration-100 ease-in"
+              leaveFrom="transform origin-top scale-y-100 opacity-100"
+              leaveTo="transform origin-top scale-y-0 opacity-0"
+            >
+              <Disclosure.Panel className="w-full bg-primary-light text-gray-500">
+                <p className="font-Mako md:text-[18px] sm:text-[12px] text-[10px] text-neutral-offset px-8 sm:pb-4 pb-1">
+                  {description}
+                </p>
+                <div className="w-full flex justify-center sm:py-4 py-1">
+                  <NavButton to={link} newPage={true}>
+                    <span className="sm:px-12 md:text-[20px] sm:text-[14px] text-[10px]">
+                      Check it out
+                    </span>
+                  </NavButton>
+                </div>
+              </Disclosure.Panel>
+            </Transition>
           </>
         )}
       </Disclosure>
