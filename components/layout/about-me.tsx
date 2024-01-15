@@ -2,6 +2,7 @@
 
 import Section from "../UI/section";
 import SectionTitle from "../UI/section-title";
+import aboutMeContent from "../../config/content/about-me.json";
 
 export default function AboutMe() {
   return (
@@ -21,7 +22,7 @@ export default function AboutMe() {
                     isVisible ? "fadeDownTitle animate-fadeDown" : ""
                   }`}
                 >
-                  about me
+                  {aboutMeContent.title}
                 </SectionTitle>
                 <div
                   className={`drop-shadow-lg  flex justify-center items-center bg-accent-back h-[330px] ${
@@ -29,17 +30,7 @@ export default function AboutMe() {
                   }`}
                 >
                   <p className="px-6 py-2  text-primary-light font-Mako xl:text-[20px] md:text-[16px] sm:text-[12px] text-[9px]">
-                    Text here for brief description of who I am. Text here for
-                    brief description of who I am. Text here for brief
-                    description of who I am. Text here for brief description of
-                    who I am. Text here for brief description of who I am. Text
-                    here for brief description of who I am. Text here for brief
-                    description of who I am. Text here for brief description of
-                    who I am. Text here for brief description of who I am. Text
-                    here for brief description of who I am. Text here for brief
-                    description of who I am. Text here Text here Text here Text
-                    here Text here Text HERe. Text here Text here Text here Text
-                    here Text here Text HERe.
+                    {aboutMeContent.description}
                   </p>
                 </div>
               </div>
