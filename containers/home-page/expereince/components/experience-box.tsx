@@ -1,5 +1,5 @@
-import BulletIcon from "../icons/bullet";
-import { ExperienceItem } from "../layout/experience";
+import BulletIcon from "../../../../components/icons/bullet";
+import { ExperienceItem } from "..";
 
 interface ExperienceBoxProps {
   experience: ExperienceItem;

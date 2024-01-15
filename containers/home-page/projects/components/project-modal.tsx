@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { ProjectItem } from "../layout/projects";
-import OverlayLink from "./overlay-link";
-import ClickIcon from "../icons/click";
-import GitHubIcon from "../icons/github";
-import SectionTitle from "./section-title";
-import ToolIcon from "../icons/tool";
+import { ProjectItem } from "..";
+import OverlayLink from "../../../../components/overlay-link";
+import ClickIcon from "../../../../components/icons/click";
+import GitHubIcon from "../../../../components/icons/github";
+import SectionTitle from "../../../../components/section-title";
+import ToolIcon from "../../../../components/icons/tool";
 
 interface ProjectModalProps {
   isOpen: boolean;

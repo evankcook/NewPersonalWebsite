@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Section from "../UI/section";
-import SectionTitle from "../UI/section-title";
-import ExperienceBox from "../UI/experience-box";
+import Section from "@/components/section";
+import SectionTitle from "@/components/section-title";
+import ExperienceBox from "./components/experience-box";
 
-import experienceContent from "../../config/content/experience.json";
+import experienceContent from "../../../config/content/experience.json";
 
 export type ExperienceItem = {
   employer: string;

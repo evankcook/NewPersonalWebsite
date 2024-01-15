@@ -1,10 +1,10 @@
-import Navbar from "../components/layout/navbar";
-import Hero from "../components/layout/hero";
-import AboutMe from "@/components/layout/about-me";
-import Experience from "@/components/layout/experience";
-import Projects from "@/components/layout/projects";
-import Interests from "@/components/layout/interests";
-import Footer from "@/components/layout/footer";
+import Navbar from "@/containers/navbar";
+import Hero from "@/containers/home-page/hero";
+import AboutMe from "@/containers/home-page/about-me";
+import Experience from "@/containers/home-page/expereince";
+import Projects from "@/containers/home-page/projects";
+import Interests from "@/containers/home-page/interests";
+import Footer from "@/containers/footer";
 
 export default function Home() {
   return (

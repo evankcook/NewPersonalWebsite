@@ -1,7 +1,7 @@
-import NavButton from "../UI/navbutton";
-import DownArrowIcon from "../icons/down-arrow";
+import NavButton from "../../../components/navbutton";
+import DownArrowIcon from "../../../components/icons/down-arrow";
 
-import heroContent from "../../config/content/hero.json";
+import heroContent from "../../../config/content/hero.json";
 
 // The hero section containing intro information and resume.
 export default function Hero() {

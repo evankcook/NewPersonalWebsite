@@ -1,8 +1,8 @@
 "use client";
 
-import Section from "../UI/section";
-import SectionTitle from "../UI/section-title";
-import aboutMeContent from "../../config/content/about-me.json";
+import Section from "../../../components/section";
+import SectionTitle from "../../../components/section-title";
+import aboutMeContent from "../../../config/content/about-me.json";
 
 export default function AboutMe() {
   return (

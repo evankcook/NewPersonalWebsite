@@ -1,10 +1,10 @@
 "use client";
 
-import ProjectThumbnail from "../UI/project-thumbnail";
-import Section from "../UI/section";
-import SectionTitle from "../UI/section-title";
+import ProjectThumbnail from "./components/project-thumbnail";
+import Section from "../../../components/section";
+import SectionTitle from "../../../components/section-title";
 
-import projectContent from "../../config/content/projects.json";
+import projectContent from "../../../config/content/projects.json";
 
 export type ProjectItem = {
   title: string;

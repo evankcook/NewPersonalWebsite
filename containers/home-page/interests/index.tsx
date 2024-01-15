@@ -1,10 +1,10 @@
 "use client";
 
-import InterestBox from "../UI/interest-box";
-import Section from "../UI/section";
-import SectionTitle from "../UI/section-title";
+import InterestBox from "./components/interest-box";
+import Section from "../../../components/section";
+import SectionTitle from "../../../components/section-title";
 
-import interestsContent from "../../config/content/interests.json";
+import interestsContent from "../../../config/content/interests.json";
 
 export type InterestItem = { title: string; description: string; link: string };
 
