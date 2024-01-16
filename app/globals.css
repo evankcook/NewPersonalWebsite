@@ -126,36 +126,21 @@
 @keyframes fadeDownFromAndOut {
   from {
     opacity: 0.3;
-    width: 95%;
+    transform: scaleX(0.95) translateY(0px);
     z-index: 0;
-    transform: translateY(0px);
   }
   to {
-    opacity: 100;
-    width: 112%;
+    opacity: 1;
+    transform: scaleX(1) translateY(2rem);
     z-index: 10;
-    transform: translateY(110px);
   }
 }
 
 .fadeDownFromAndOut {
   opacity: 0.3;
-  width: 95%;
+  transform: scaleX(0.95);
   z-index: 0;
-  animation: fadeDownFromAndOut 0.5s forwards 0.2;
-}
-
-@keyframes fadeDownTab {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(55px);
-  }
-}
-
-.fadeDownTab {
-  animation: fadeDownTab 0.5s forwards 0.2;
+  animation: fadeDownFromAndOut 0.2s forwards 0.2s;
 }
 
 @keyframes expandWidth {

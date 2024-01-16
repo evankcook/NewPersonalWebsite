@@ -115,7 +115,7 @@ export function Experience() {
               <ExperienceBox experience={experienceList[currentTab]} />
             </div>
             <div
-              className={`absolute top-0 w-[95%] lg:h-[29rem] h-[32rem] bg-primary-light opacity-30 ${
+              className={`absolute top-0 w-full scale-x-[0.95] lg:h-[29rem] h-[32rem] bg-primary-light opacity-30 ${
                 isAnimating
                   ? "fadeDownFromAndOut animate-fadeDownFromAndOut"
                   : ""
@@ -126,12 +126,8 @@ export function Experience() {
                   !isAnimating && "hover:bg-light-secondary"
                 } font-Mako text-primary-light border-primary-light md:text-[20px] text-[14px] px-4 py-1 rounded-md border-[3px] ${
                   isPositionLeft
-                    ? "md:left-80 sm:left-[11rem] left-[9rem]"
+                    ? "md:left-[21rem] sm:left-[12rem] left-[10rem]"
                     : "md:left-14 sm:left-8 left-4"
-                } ${
-                  isAnimating && isPositionLeft
-                    ? "fadeDownTab animate-fadeDownTab"
-                    : ""
                 }`}
                 onClick={() => handleTabChange(nextTab)}
               >
