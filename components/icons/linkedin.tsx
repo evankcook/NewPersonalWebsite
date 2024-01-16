@@ -1,4 +1,4 @@
-export default function LinkedInIcon(props: React.ComponentProps<"svg">) {
+export function LinkedInIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       width="35"

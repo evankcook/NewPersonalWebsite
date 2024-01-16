@@ -1,12 +1,8 @@
 import { Disclosure, Transition } from "@headlessui/react";
-import { InterestItem } from "..";
-import NavButton from "../../../../components/navbutton";
+import { InterestItem } from "./interests";
+import { NavButton } from "@/components/navbutton";
 
-export default function InterestBox({
-  title,
-  description,
-  link,
-}: InterestItem) {
+export function InterestBox({ title, description, link }: InterestItem) {
   return (
     <div className="w-full sm:mb-16 mb-8">
       <Disclosure>

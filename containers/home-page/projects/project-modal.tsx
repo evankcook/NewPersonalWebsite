@@ -1,10 +1,7 @@
 import { useEffect } from "react";
-import { ProjectItem } from "..";
-import OverlayLink from "../../../../components/overlay-link";
-import ClickIcon from "../../../../components/icons/click";
-import GitHubIcon from "../../../../components/icons/github";
-import SectionTitle from "../../../../components/section-title";
-import ToolIcon from "../../../../components/icons/tool";
+import { ProjectItem } from "./projects";
+import { OverlayLink } from "@/components/overlay-link";
+import { GitHubIcon, ToolIcon } from "@/components/icons";
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -12,11 +9,7 @@ interface ProjectModalProps {
   project: ProjectItem;
 }
 
-export default function ProjectModal({
-  isOpen,
-  onClose,
-  project,
-}: ProjectModalProps) {
+export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
   useEffect(() => {
     const originalStyle = window.getComputedStyle(document.body).overflow;
 

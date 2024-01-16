@@ -1,4 +1,4 @@
-export default function DownArrowIcon(props: React.ComponentProps<"svg">) {
+export function DownArrowIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       width="38"

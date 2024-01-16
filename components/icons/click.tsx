@@ -1,4 +1,4 @@
-export default function ClickIcon(props: React.ComponentProps<"svg">) {
+export function ClickIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       width="29"

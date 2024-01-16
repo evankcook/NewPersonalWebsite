@@ -1,11 +1,11 @@
-import BulletIcon from "../../../../components/icons/bullet";
-import { ExperienceItem } from "..";
+import { BulletIcon } from "@/components/icons";
+import { ExperienceItem } from "./experience";
 
 interface ExperienceBoxProps {
   experience: ExperienceItem;
 }
 
-export default function ExperienceBox({ experience }: ExperienceBoxProps) {
+export function ExperienceBox({ experience }: ExperienceBoxProps) {
   return (
     <div className="flex flex-col justify-start items-start w-full p-8">
       <div className="flex justify-start items-between w-full h-16">

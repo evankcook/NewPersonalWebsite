@@ -2,7 +2,7 @@ type HamburgerIconProps = {
   isMenuOpen: boolean;
 };
 
-export default function HamburgerIcon({ isMenuOpen }: HamburgerIconProps) {
+export function HamburgerIcon({ isMenuOpen }: HamburgerIconProps) {
   return (
     <svg
       className="w-6 h-6 text-primary-light"

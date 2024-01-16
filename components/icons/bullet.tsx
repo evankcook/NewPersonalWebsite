@@ -1,4 +1,4 @@
-export default function BulletIcon(props: React.ComponentProps<"svg">) {
+export function BulletIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       width="14"

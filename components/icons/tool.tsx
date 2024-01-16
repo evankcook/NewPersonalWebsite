@@ -1,4 +1,4 @@
-export default function ToolIcon(props: React.ComponentProps<"svg">) {
+export function ToolIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       width="36"

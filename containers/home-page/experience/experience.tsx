@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Section from "@/components/section";
-import SectionTitle from "@/components/section-title";
-import ExperienceBox from "./components/experience-box";
+import { Section, SectionTitle } from "@/components/section";
+import { ExperienceBox } from "./experience-box";
 
 import experienceContent from "../../../config/content/experience.json";
 
@@ -18,7 +17,7 @@ export type ExperienceItem = {
 
 const experienceList: ExperienceItem[] = experienceContent;
 
-export default function Experience() {
+export function Experience() {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isPositionLeft, setIsPositionLeft] = useState(true);
   const [currentTab, setCurrentTab] = useState(0);

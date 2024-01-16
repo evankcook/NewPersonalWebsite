@@ -1,4 +1,4 @@
-export default function MailIcon(props: React.ComponentProps<"svg">) {
+export function MailIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       width="36"

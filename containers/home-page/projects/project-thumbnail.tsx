@@ -1,8 +1,8 @@
-import ClickIcon from "../../../../components/icons/click";
-import { ProjectItem } from "..";
+import { ClickIcon } from "@/components/icons";
+import { ProjectItem } from "./projects";
 import { useState } from "react";
-import ProjectModal from "./project-modal";
-import OverlayLink from "../../../../components/overlay-link";
+import { ProjectModal } from "./project-modal";
+import { OverlayLink } from "@/components/overlay-link";
 
 export default function ProjectThumbnail({
   title,
