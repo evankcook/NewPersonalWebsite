@@ -140,7 +140,7 @@
   opacity: 0.3;
   transform: scaleX(0.95);
   z-index: 0;
-  animation: fadeDownFromAndOut 0.2s forwards 0.2s;
+  animation: fadeDownFromAndOut 0.1s forwards 0.1s;
 }
 
 @keyframes expandWidth {
